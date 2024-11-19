@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.back-img {
+  width: 100%;
+  height: 80%;
+  background-image: url(./img/Xv6AuzeS.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+}
+
+h1 {
+  font-family: var(--font-julius);
+  font-size: 2.7rem;
+}
+
+.skills,
+.social,
+.presentation {
+  width: 80%;
+}
+
+.skills ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: var(--font-julius);
+  font-size: x-large;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 3rem;
+}
+
+.item-link {
+  color: white;
+}
+
+.item-link i {
+  transition: text-shadow .3s ease-in-out;
+}
+
+.item-link i:hover {
+  text-shadow: 0 0 20px #2391F2;
+}
+
+.presentation {
+  font-family: var(--font-montserrat);
+  font-size: large;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.presentation span {
+  color: #55E7FC;
+  font-weight: bold;
+}
