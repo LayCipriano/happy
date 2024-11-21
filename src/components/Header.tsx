@@ -22,10 +22,10 @@ export default function Header() {
 
                         <div className="social">
                             <div className="links">
-                                <a href="http://www.linkedin.com/in/lay-cipriano" target='_blank' className='item-link'><i className="fa-brands fa-linkedin"></i></a>
-                                <a href="#" className='item-link'><i className="fa-brands fa-square-github"></i></a>
-                                <a href="#" className='item-link'><i className="fa-solid fa-envelope"></i></a>
-                            </div>
+                                <a href="https://www.linkedin.com/in/lay-cipriano" target='_blank' className='item-link'><i className="fa-brands fa-linkedin"></i></a>
+                                <a href="https://github.com/LayCipriano" target='_blank' className='item-link'><i className="fa-brands fa-square-github"></i></a>
+                                <a href="mailto:webdevlay@gmail.com" target='_blank' className='item-link'><i className="fa-solid fa-envelope"></i></a>
+                            </div> 
                         </div>
 
                         <div className="presentation">
