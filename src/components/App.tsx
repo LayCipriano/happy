@@ -1,11 +1,11 @@
 import Header from './Header'
-import Main from './Main'
+import Container from './Container'
 
 export default function App() {
   return (
-    <>
+    <main>
       <Header/>
-      <Main/>
-    </>
+      <Container/>
+    </main>
   )
 }
