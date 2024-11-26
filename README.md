@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# Meu Portfólio de Desenvolvimento
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="/src/assets/img/portfolio.png">
 
-Currently, two official plugins are available:
+## Sobre o Projeto
+Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências na área de desenvolvimento. O objetivo é compartilhar meu trabalho com o mundo e facilitar o contato com possíveis parceiros e empregadores.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
+**Frontend** React.js, TypeScript
+**Estilização** CSS3 
+**Hospedagem** Netlify
 
-## Expanding the ESLint configuration
+## Funcionalidades
+Exibição de projetos com descrição e links.
+Design responsivo para todos os dispositivos.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Layout
+A base do design foi desenvolvido no Figma e você pode visualizar uma prévia do layout [aqui](https://www.figma.com/proto/QqpvQFvGa3nmwxT9CyexWi/mockup---portfolio?node-id=0-1&t=LkKiHWaYQ07mbXug-1)
 
-- Configure the top-level `parserOptions` property like this:
+## Estrutura de Pastas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+ src
+ ┣ | components  # Componentes reutilizáveis
+ ┣ | assets      # Imagens, ícones e fontes
+ ┣ | styles      # Estilos globais e temas
+ ┗ main.tsx      # Ponto de entrada da aplicação
+## Como Executar o Projeto
+Clone este repositório:
+~~~bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+~~~
+Acesse a pasta do projeto:
+~~~bash
+cd seu-repositorio
+~~~
+Instale as dependências:
+~~~bash
+npm install
+~~~
+Inicie o projeto:
+~~~bash
+npm start
+~~~
+O site estará disponível em http://localhost:3000.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+# Contato
+Email: webdevlay@gmail.com
+LinkedIn: [Laysa Cipriano](https://br.linkedin.com/in/lay-cipriano)
+Portfólio: www.laycipriano.com.br
