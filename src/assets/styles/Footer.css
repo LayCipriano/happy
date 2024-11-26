@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 3rem;
+  background-color: #000A23;
+}
+
+.footer p {
+  font-family: var(--font-julius);
+  color: white;
+  font-weight: bolder;
+}
+
+.footer p span {
+  color: #55E7FC;
+  text-shadow: 3px 3px 10px #2391F2;
+
+}

@@ -1,5 +1,5 @@
-import '../assets/Header.css'
-import '../assets/Container.css'
+import '../assets/styles/Header.css'
+import '../assets/styles/Container.css'
 import Portfolio from './Portfolio'
 
 export default function Container() {
