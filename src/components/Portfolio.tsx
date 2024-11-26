@@ -2,6 +2,7 @@ import easyMessage from '../assets/img/easyMessage.png'
 import toDoList from '../assets/img/toDoList.png'
 import buscadorCep from '../assets/img/buscadorCep.png'
 import portfolio from '../assets/img/portfolio.png'
+import petAdopt from '../assets/img/petAdopt.png'
 
 export default function Portfolio() {
   const itens = [
@@ -38,8 +39,17 @@ export default function Portfolio() {
       descricao: "Meu próprio portfólio é meu último projeto desenvolvido com ReactJs. Anteriormente produzido com uso de HTML, CSS, JS e PHP, esta nova versão se encontra aprimorada com meus últimos conhecimentos da famosa biblioteca e novos pacotes descobertos.",
       botaoGithub: "GitHub",
       linkProjeto: "https://laycipriano.com.br/",
-      linkRepo: "https://github.com/LayCipriano/portfolioV3"
+      linkRepo: "https://github.com/LayCipriano/portfolio"
     },
+    {
+    nome: "Abrigo de Animais- Pet Adopt",
+    image: petAdopt,
+    descricao: "Colaboração no projeto final do bootcamp backend Python com Django oferecido pela WoMakers Code",
+    botaoProjeto: "Ver Website",
+    botaoGithub: "GitHub",
+    linkProjeto: "https://petadopt.pythonanywhere.com/",
+    linkRepo: "https://github.com/Squad-eniac/abrigo_animais_SquadENIAC"
+    }
   ];
 
   return (
