@@ -36,7 +36,6 @@ export default function Portfolio() {
       nome: "Meu Portfólio",
       image: portfolio,
       descricao: "Meu próprio portfólio é meu último projeto desenvolvido com ReactJs. Anteriormente produzido com uso de HTML, CSS, JS e PHP, esta nova versão se encontra aprimorada com meus últimos conhecimentos da famosa biblioteca e novos pacotes descobertos.",
-      botaoProjeto: "Ver Website",
       botaoGithub: "GitHub",
       linkProjeto: "https://laycipriano.com.br/",
       linkRepo: "https://github.com/LayCipriano/portfolioV3"
@@ -52,12 +51,15 @@ export default function Portfolio() {
           <p className='description'>{item.descricao}</p>
 
           <div className="btns">
-            <a href={item.linkProjeto} target='_blank'>Ver Website</a>
-            <a href={item.linkRepo} target='_blank'>GitHub</a>
-          </div>
+            {item.botaoProjeto && (
+              < a href={item.linkProjeto} target='_blank'>{item.botaoProjeto}</a>
+            )}
+          <a href={item.linkRepo} target='_blank'>GitHub</a>
         </div>
-      ))}
-    </div>
+        </div>
+  ))
+}
+    </div >
   )
 }
 
