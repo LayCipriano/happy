@@ -7,7 +7,9 @@ export default function Projects(props:any) {
       <p className='description'>{props.data.description}</p>
 
       <div className="btns">
-        < a href={props.data.linkProject} target='_blank'>Acessar</a>
+        {props.data.linkProject && (
+          <a href={props.data.linkProject} target='_blank'>Acessar</a>
+        )}
         <a href={props.data.linkRepo} target='_blank'>GitHub</a>
       </div>
     </div>
