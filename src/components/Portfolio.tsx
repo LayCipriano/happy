@@ -1,74 +1,35 @@
-import easyMessage from '../assets/img/easyMessage.png'
-import toDoList from '../assets/img/toDoList.png'
-import buscadorCep from '../assets/img/buscadorCep.png'
-import portfolio from '../assets/img/portfolio.png'
-import petAdopt from '../assets/img/petAdopt.png'
+import React, {useEffect, useState} from "react"
+import axios from "axios"
 
 export default function Portfolio() {
-  const itens = [
-    {
-      nome: "Easy Message",
-      image: easyMessage,
-      descricao: "Aplicação desenvolvida, com HTML, CSS e JS para o envio de mensagens no WhatsApp. Por ela você consegue enviar grandes textos com facilidade, aplicar formatações suportadas pelo app ou até mesmo iniciar chats sem salvar o contato.",
-      botaoProjeto: "Ver Website",
-      botaoGithub: "GitHub",
-      linkProjeto: "https://easymessage.laycipriano.com.br/",
-      linkRepo: "https://github.com/LayCipriano/easyMessage"
-    },
-    {
-      nome: "To Do List",
-      image: toDoList,
-      descricao: "Desenvolvido utilizando ReactJs e alguns conceitos de useState. O mesmo armazena os dados no LocalStorage do navegador, permitindo ao usuário fechar a aba do navegador e continuar com os dados salvos para mais tarde.",
-      botaoProjeto: "Ver Website",
-      botaoGithub: "GitHub",
-      linkProjeto: "https://todolist.laycipriano.com.br/",
-      linkRepo: "https://github.com/LayCipriano/toDoList"
-    },
-    {
-      nome: "Buscador de CEP",
-      image: buscadorCep,
-      descricao: "Projeto de um buscador de CEP gratuito, consumindo uma API da viacep.com.br para localizar o endereço. Reconhece e exibe rua/avenida, bairro, cidade/UF e complemento, se disponível.",
-      botaoProjeto: "Ver Website",
-      botaoGithub: "GitHub",
-      linkProjeto: "https://buscadorcep.laycipriano.com.br/",
-      linkRepo: "https://github.com/LayCipriano/buscadorCEP"
-    },
-    {
-      nome: "Meu Portfólio",
-      image: portfolio,
-      descricao: "Meu próprio portfólio é meu último projeto desenvolvido com ReactJs. Anteriormente produzido com uso de HTML, CSS, JS e PHP, esta nova versão se encontra aprimorada com meus últimos conhecimentos da famosa biblioteca e novos pacotes descobertos.",
-      botaoGithub: "GitHub",
-      linkProjeto: "https://laycipriano.com.br/",
-      linkRepo: "https://github.com/LayCipriano/portfolio"
-    },
-    {
-    nome: "Abrigo de Animais- Pet Adopt",
-    image: petAdopt,
-    descricao: "Colaboração no projeto final do bootcamp backend Python com Django oferecido pela WoMakers Code",
-    botaoProjeto: "Ver Website",
-    botaoGithub: "GitHub",
-    linkProjeto: "https://petadopt.pythonanywhere.com/",
-    linkRepo: "https://github.com/Squad-eniac/abrigo_animais_SquadENIAC"
-    }
-  ];
 
+  const [projetos, setProjetos] = useState([])
+
+  useEffect(() => {
+    axios.get('https://backend-portfolio-f380.onrender.com/api/projects').then(response => {
+      setProjetos(response.data)
+    }).catch(error => {
+      console.error("Erro ao buscar os conteúdos!", error);
+    })
+  }, [])
+  
   return (
     <div className="boxes">
-      {itens.map((item, index) => (
+      {projetos.map((projeto, index) => (
         <div key={index} className="box-item">
-          <img src={item.image} alt='Printscreen do website' />
-          <span className='titulo-span'>{item.nome}</span>
-          <p className='description'>{item.descricao}</p>
+          <img src={projeto.image} alt={projeto.title} />
+          <span className='titulo-span'>{projeto.title}</span>
+          <p className='description'>{projeto.description}</p>
 
           <div className="btns">
-            {item.botaoProjeto && (
-              < a href={item.linkProjeto} target='_blank'>{item.botaoProjeto}</a>
+            {projeto.linkProject && (
+              < a href={projeto.linkProject} target='_blank'>Acessar</a>
             )}
-          <a href={item.linkRepo} target='_blank'>GitHub</a>
+          <a href={projeto.linkRepo} target='_blank'>GitHub</a>
         </div>
         </div>
-  ))
-}
+      ))
+    }
     </div >
   )
 }
