@@ -6,7 +6,7 @@ export default function Container() {
     return (
         <div className="container">
             <h1 className='titulo'>Portfólio</h1>
-            < Portfolio />
+            < Portfolio/>
         </div>
     )
 }

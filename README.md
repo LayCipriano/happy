@@ -23,6 +23,7 @@ A base do design foi desenvolvido no Figma e você pode visualizar uma prévia d
  ┣ | components  # Componentes reutilizáveis
  ┣ | assets      # Imagens, ícones e fontes
  ┣ | styles      # Estilos globais e temas
+ ┣ | services    # Services para consumo de APIs
  ┗ main.tsx      # Ponto de entrada da aplicação
 ## Como Executar o Projeto
 Clone este repositório:
