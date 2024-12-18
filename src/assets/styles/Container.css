@@ -74,6 +74,10 @@
   box-shadow: 0 0 20px #2391F2;
 }
 
+.loading {
+  margin: 2rem;
+}
+
 /* responsividade */
 @media (min-width: 992px) {
   .boxes {
