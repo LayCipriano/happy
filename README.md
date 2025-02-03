@@ -21,10 +21,15 @@ A base do design foi desenvolvido no Figma e você pode visualizar uma prévia d
 ## Estrutura de Pastas
 
  src
- ┣ | components  # Componentes reutilizáveis
- ┣ | assets      # Imagens, ícones e fontes
- ┣ | styles      # Estilos globais e temas
- ┣ | services    # Services para consumo de APIs
+ 
+  ┣ | components  # Componentes reutilizáveis
+ 
+  ┣ | assets      # Imagens, ícones e fontes
+ 
+  ┣ | styles      # Estilos globais e temas
+ 
+  ┣ | services    # Services para consumo de APIs
+ 
  ┗ main.tsx      # Ponto de entrada da aplicação
 
 ## Backend do Projeto
@@ -50,6 +55,6 @@ npm start
 O site estará disponível em http://localhost:3000.
 
 # Contato
-- **Email**: webdevlay@gmail.co
+- **Email**: webdevlay@gmail.com
 - **LinkedIn**: [Laysa Cipriano](https://br.linkedin.com/in/lay-cipriano)
 - **Portfólio**: www.laycipriano.com.br
