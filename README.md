@@ -6,9 +6,9 @@
 Este é o meu portfólio pessoal, onde apresento meus projetos, habilidades e experiências na área de desenvolvimento. O objetivo é compartilhar meu trabalho com o mundo e facilitar o contato com possíveis parceiros e empregadores.
 
 ## Tecnologias Utilizadas
-**Frontend**: React.js, TypeScript
-**Estilização**: CSS3 
-**Hospedagem**: Netlify
+- **Frontend**: React.js, TypeScript
+- **Estilização**: CSS3 
+- **Hospedagem**: Netlify
 
 ## Funcionalidades
 Exibição de projetos com descrição e links.
@@ -50,6 +50,6 @@ npm start
 O site estará disponível em http://localhost:3000.
 
 # Contato
-**Email**: webdevlay@gmail.co
-**LinkedIn**: [Laysa Cipriano](https://br.linkedin.com/in/lay-cipriano)
-**Portfólio**: www.laycipriano.com.br
+- **Email**: webdevlay@gmail.co
+- **LinkedIn**: [Laysa Cipriano](https://br.linkedin.com/in/lay-cipriano)
+- **Portfólio**: www.laycipriano.com.br
